@@ -35,7 +35,7 @@ namespace DesalinationPlant
             base.CompTick();
             if (compPower.PowerOn)
             {
-                compPipe.pipeNet.WaterPumpedPerTick += Props.waterPerTick;
+                compPipe.pipeNet.PushWater(Props.waterPerTick);
             }
         }
     }
